@@ -19,18 +19,21 @@
             height: 100vh; /* 100% da altura da janela */
             position: relative; /* Para posicionar os links sobre a imagem */
             overflow: hidden; /* Para evitar que o conteúdo transborde */
+            display: flex; /* Para centralizar a imagem se necessário */
+            justify-content: center; /* Alinhar horizontalmente */
+            align-items: center; /* Alinhar verticalmente */
         }
 
         .container img {
-            width: auto; /* Largura total do container */
-            height: auto; /* Altura automática para manter a proporção */
-            max-height: 100%; /* Garantir que não exceda a altura do container */
+            max-width: 100%; /* A imagem não pode ser maior que o container */
+            max-height: 100%; /* A imagem não pode ser maior que a altura do container */
+            object-fit: contain; /* Manter a proporção da imagem */
             display: block; /* Para remover espaçamentos indesejados */
         }
 
         .link {
             position: absolute; /* Para permitir posicionamento absoluto */
-            color: white; /* Cor do texto dos links */
+            color: red; /* Cor do texto dos links */
             text-decoration: none; /* Sem sublinhado */
             font-size: 2vw; /* Tamanho da fonte responsivo */
         }
