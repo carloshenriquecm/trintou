@@ -2,24 +2,22 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Convite de Aniversário Trintx</title>
-    <meta name="description" content="Convite para o aniversário Trintaw!">
+    <title>Convite de Aniversário Trintooou!</title>
+    <meta name="description" content="Convite para o aniversário Trintooou!">
+    <link rel="icon" href="icon.png" type="image/x-icon">
     
     <!-- Meta Tags Open Graph -->
-    <meta property="og:title" content="Convite de Aniversário Trintd" />
-    <meta property="og:description" content="Convite para o aniversário Trintou!" />
-    <meta property="og:image" content="https://carloshenriquecm.github.io/trintou/finalizado.png" /> <!-- Substitua pelo URL da imagem do convite -->
-    <meta property="og:url" content="https://carloshenriquecm.github.io/trintou/" /> <!-- Substitua pela URL do seu site -->
+    <meta property="og:title" content="Convite de Aniversário Trintooou!" />
+    <meta property="og:description" content="Data: 14/12 às 19 horas." />
+    <meta property="og:image" content="https://carloshenriquecm.github.io/trintou/preview.jpg" />
+    <meta property="og:url" content="https://carloshenriquecm.github.io/trintou/" />
     <meta property="og:type" content="website" />
-    
-    <!-- Meta Tags para Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Convite de Aniversário Trintei" />
-    <meta name="twitter:description" content="Convite para o aniversário Trintou!" />
-    <meta name="twitter:image" content="https://carloshenriquecm.github.io/trintou/finalizado.png" /> <!-- Substitua pelo URL da imagem do convite -->
+    <meta name="twitter:title" content="Convite de Aniversário Trintooou!" />
+    <meta name="twitter:description" content="Data: 14/12 às 19 horas." />
+    <meta name="twitter:image" content="https://carloshenriquecm.github.io/trintou/preview.jpg" />
 
     <style>
-        /* Estilos para ocupar 100% da tela */
         body, html {
             margin: 0;
             padding: 0;
@@ -28,25 +26,22 @@
         }
         iframe {
             width: 100%;
-            height: 100vh; /* Altura da viewport */
-            border: none; /* Remove a borda */
+            height: 100vh;
+            border: none;
         }
     </style>
 </head>
 <body>
     <script>
-        // Função para detectar se o dispositivo é móvel
         function isMobile() {
             return /Mobi|Android/i.test(navigator.userAgent);
         }
 
         if (isMobile()) {
-            // Para dispositivos móveis, exibe o PDF do Google Drive
             document.write(`
                 <iframe src="https://drive.google.com/file/d/1lHPpulz94JKiHpzuReX_E7lk2SqTEhiS/preview" width="100%" height="100vh" style="border: none;"></iframe>
             `);
         } else {
-            // Para desktops, exibe o PDF localmente
             document.write(`
                 <iframe src="convite.pdf" width="100%" height="100vh" style="border: none;"></iframe>
             `);
