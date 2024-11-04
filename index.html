@@ -3,6 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Convite de Aniversário Trintou</title>
+    <meta name="description" content="Convite para o aniversário Trintou!">
+    
+    <!-- Meta Tags Open Graph -->
+    <meta property="og:title" content="Convite de Aniversário Trintou" />
+    <meta property="og:description" content="Convite para o aniversário Trintou!" />
+    <meta property="og:image" content="/finalizado.png" /> <!-- Substitua pelo URL da imagem do convite -->
+    <meta property="og:url" content="https://www.seusite.com" /> <!-- Substitua pela URL do seu site -->
+    <meta property="og:type" content="website" />
+    
+    <!-- Meta Tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Convite de Aniversário Trintou" />
+    <meta name="twitter:description" content="Convite para o aniversário Trintou!" />
+    <meta name="twitter:image" content="/finalizado.png" /> <!-- Substitua pelo URL da imagem do convite -->
+
     <style>
         /* Estilos para ocupar 100% da tela */
         body, html {
@@ -32,7 +47,6 @@
             `);
         } else {
             // Para desktops, exibe o PDF localmente
-            // O ajuste aqui é usar o PDF diretamente, sem a necessidade de parâmetros de ajuste de visualização
             document.write(`
                 <iframe src="convite.pdf" width="100%" height="100vh" style="border: none;"></iframe>
             `);
