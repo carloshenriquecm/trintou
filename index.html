@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem de Fundo e Links Invisíveis</title>
+    <style>
+        /* Estilos básicos para o corpo */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+
+        /* Container da imagem de fundo */
+        .background-container {
+            width: 100%;
+            height: 100vh; /* Altura 100% da viewport */
+            background-image: url('finalizado.png'); /* Substitua pelo caminho da sua imagem */
+            background-size: contain; /* Mantém a proporção e exibe a imagem inteira */
+            background-repeat: no-repeat; /* Evita a repetição da imagem */
+            background-position: center; /* Centraliza a imagem */
+            position: relative;
+        }
+
+        /* Estilo dos links invisíveis */
+        .link {
+            position: absolute;
+            width: 6%; /* Defina a largura do link invisível (ajustável) */
+            height: 14%; /* Defina a altura do link invisível (ajustável) */
+            cursor: pointer;
+            /* Link invisível */
+            background-color: transparent;
+        }
+
+        /* Posicionamento do link 1 */
+        .link1 {
+            top: 26.5%; /* Ajuste a posição do link */
+            left: 43%; /* Ajuste a posição do link */
+        }
+
+        /* Posicionamento do link 2 */
+        .link2 {
+            top: 26.5%; /* Ajuste a posição do link */
+            left: 51%; /* Ajuste a posição do link */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <a href="https://maps.app.goo.gl/Kb13BAJ8EKwBxY5N9" class="link link1"></a> <!-- Link invisível 1 -->
+        <a href="https://chat.whatsapp.com/JhNYl88GFFK9SLiZw82oCc" class="link link2"></a> <!-- Link invisível 2 -->
+    </div>
+</body>
+</html>
