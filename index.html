@@ -8,18 +8,28 @@
         body, html {
             margin: 0;
             padding: 0;
+            height: 100vh; /* Altura da janela de visualização */
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden; /* Impede a rolagem */
         }
 
         .container {
             position: relative;
             width: 1080px;  /* Largura da imagem */
             height: 1920px; /* Altura da imagem */
-            background-image: url('finalizado.png'); /* Substitua pelo caminho da sua imagem */
-            background-size: cover;
-            background-position: center;
+            max-height: 100vh; /* Limita a altura à altura da viewport */
+            overflow: hidden; /* Oculta partes da imagem que estão fora do contêiner */
+        }
+
+        .background-image {
+            width: auto; /* Mantém a largura original da imagem */
+            height: 100%; /* Ajusta a altura da imagem para 100% do contêiner */
+            position: absolute;
+            top: 50%; /* Centraliza verticalmente */
+            left: 50%; /* Centraliza horizontalmente */
+            transform: translate(-50%, -50%); /* Centraliza a imagem */
         }
 
         .link {
@@ -46,6 +56,7 @@
 </head>
 <body>
     <div class="container">
+        <img src="finalizado.png" alt="Imagem de Fundo" class="background-image"> <!-- Substitua pelo caminho da sua imagem -->
         <a href="https://link1.com" class="link link1">Link 1</a>
         <a href="https://link2.com" class="link link2">Link 2</a>
     </div>
